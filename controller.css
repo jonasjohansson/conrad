@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   position: absolute;
   width: 100%;
@@ -52,54 +53,54 @@ body:not(.edit) * {
 
 /* gamepad */
 
-[data-controller='gamepad'] .left {
+[data-layout='gamepad'] .left {
   grid-area: 3 / 1 / 5 / 1;
 }
-[data-controller='gamepad'] .right {
+[data-layout='gamepad'] .right {
   grid-area: 3 / 3 / 5 / 3;
 }
-[data-controller='gamepad'] .up {
+[data-layout='gamepad'] .up {
   grid-area: 1 / 2 / 3 / 2;
 }
-[data-controller='gamepad'] .down {
+[data-layout='gamepad'] .down {
   grid-area: 5 / 2 / 7 / 2;
 }
-[data-controller='gamepad'] .a {
+[data-layout='gamepad'] .a {
   grid-area: 3 / 4 / 5 / 4;
 }
-[data-controller='gamepad'] .b {
+[data-layout='gamepad'] .b {
   grid-area: 1 / 5 / 3 / 5;
 }
-[data-controller='gamepad'] .c {
+[data-layout='gamepad'] .c {
   grid-area: 3 / 6 / 5 / 6;
 }
-[data-controller='gamepad'] .d {
+[data-layout='gamepad'] .d {
   grid-area: 5 / 5 / 7 / 5;
 }
 
 /* Keyboard */
 
-[data-controller='keyboard'] .left {
+[data-layout='keyboard'] .left {
   grid-area: 5 / 4 / 7 / 4;
 }
-[data-controller='keyboard'] .right {
+[data-layout='keyboard'] .right {
   grid-area: 5 / 6 / 7 / 6;
 }
-[data-controller='keyboard'] .up {
+[data-layout='keyboard'] .up {
   grid-area: 3 / 5 / 5 / 5;
 }
-[data-controller='keyboard'] .down {
+[data-layout='keyboard'] .down {
   grid-area: 5 / 5 / 7 / 5;
 }
-[data-controller='keyboard'] .a {
+[data-layout='keyboard'] .a {
   grid-area: 5 / 1 / 7 / 1;
 }
-[data-controller='keyboard'] .b {
+[data-layout='keyboard'] .b {
   grid-area: 5 / 2 / 7 / 2;
 }
-[data-controller='keyboard'] .c {
+[data-layout='keyboard'] .c {
   grid-area: 5 / 3 / 7 / 3;
 }
-[data-controller='keyboard'] .d {
+[data-layout='keyboard'] .d {
   display: none;
 }
