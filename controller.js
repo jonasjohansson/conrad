@@ -23,8 +23,10 @@ const onTouchStart = evt => {
 };
 
 const onTouchEnd = evt => {
-  if (isEditable) return;
-
+  if (isEditable) {
+    el.textContent = el.textContent.toLowerCase();
+    return;
+  }
   var el = evt.currentTarget;
   el.classList.remove('active');
   socket.emit('touchend', el.textContent);
