@@ -8,11 +8,11 @@ var inputs = document.querySelectorAll('.input');
 
 var touchTimer;
 
-var controllers = ['gamepad', 'keyboard'];
+var layouts = ['gamepad', 'keyboard'];
 
-var controller = controllers[getRandomInt(0, controllers.length - 1)];
+var layout = layouts[getRandomInt(0, layouts.length - 1)];
 
-document.body.setAttribute('data-controller', controller);
+document.body.setAttribute('data-layout', layout);
 
 const onTouchStart = evt => {
   if (isEditable) return;
