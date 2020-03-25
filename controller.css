@@ -40,7 +40,7 @@ body:not(.edit) * {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border: 1px solid green;
   box-sizing: border-box;
   border-radius: 10%;
