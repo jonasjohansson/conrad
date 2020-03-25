@@ -8,9 +8,9 @@ var robot = require('robotjs');
 
 app.use('/', express.static(__dirname));
 
-// app.get('/', function(req, res) {
-//   res.sendFile(__dirname + '/index.html');
-// });
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/controller.html');
+});
 
 io.on('connection', function(socket) {
   console.log('a user connected');

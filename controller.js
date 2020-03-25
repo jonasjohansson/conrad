@@ -8,6 +8,12 @@ var inputs = document.querySelectorAll('.input');
 
 var touchTimer;
 
+var controllers = ['gamepad', 'keyboard'];
+
+var controller = controllers[getRandomInt(0, controllers.length - 1)];
+
+document.body.setAttribute('data-controller', controller);
+
 const onTouchStart = evt => {
   if (isEditable) return;
 
@@ -31,6 +37,7 @@ const toggleEditMode = () => {
 };
 
 for (let input of inputs) {
+  // input.classList.add(input.textContent);
   input.addEventListener('touchstart', onTouchStart, false);
   input.addEventListener('mousedown', onTouchStart, false);
   input.addEventListener('touchend', onTouchEnd, false);
@@ -56,3 +63,7 @@ document.addEventListener(
   },
   false
 );
+
+function getRandomInt(min, max) {
+  return min + Math.floor(Math.random() * (max - min + 1));
+}
