@@ -6,10 +6,10 @@ var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var robot = require('robotjs');
 
-app.use('/', express.static(__dirname));
+app.use('/', express.static(__dirname + '/public/'));
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/controller.html');
+  res.sendFile(__dirname + '/public/controller.html');
 });
 
 io.on('connection', function(socket) {
