@@ -1,5 +1,10 @@
 /** @format */
 
+:root {
+  --color-default: blue;
+  --color-active: yellow;
+}
+
 * {
   border: 0;
   margin: 0;
@@ -35,19 +40,17 @@ body:not(.edit) * {
 }
 
 .input {
-  /* width: 100%;
-  height: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  border: 1px solid green;
+  border: 2px solid var(--color-default);
   box-sizing: border-box;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 .input.active {
-  border-color: orange !important;
+  border-color: var(--color-active) !important;
 }
 
 /* gamepad */
