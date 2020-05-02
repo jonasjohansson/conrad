@@ -1,17 +1,35 @@
 {
-  "name": "socket-controller",
+  "name": "conrad",
+  "productName": "Conrad",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Minimal controller interface for web enabled devices",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Johansson",
+    "email": "jns.johansson@gmail.com",
+    "url": "https://jonasjohansson.se"
   },
-  "author": "",
-  "license": "ISC",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
     "ip": "^1.1.5",
     "robotjs": "^0.6.0",
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0"
+  },
+  "scripts": {
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "se.jonasjohansson.conrad",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "dmg": {
+      "title": "Conrad"
+    }
   }
 }

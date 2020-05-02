@@ -1,5 +1,3 @@
-/** @format */
-
 var express = require('express');
 var app = express();
 var http = require('http').createServer(app);
@@ -9,11 +7,11 @@ var ip = require('ip');
 
 app.use('/', express.static(__dirname + '/public/'));
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/controller.html');
 });
 
-io.on('connection', function(socket) {
+io.on('connection', function (socket) {
   console.log('a user connected');
 
   socket.on('touchstart', key => {
@@ -26,7 +24,7 @@ io.on('connection', function(socket) {
   });
 });
 
-http.listen(3000, function() {
+http.listen(3000, function () {
   console.log('listening on *:3000');
   console.log('connect devices to ' + ip.address());
 });
