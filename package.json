@@ -17,7 +17,7 @@
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "electron": "^8.2.5",
+    "electron": "^8.5.2",
     "electron-builder": "^22.6.0"
   },
   "scripts": {
