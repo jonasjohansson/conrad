@@ -14,7 +14,7 @@
     "express": "^4.17.1",
     "ip": "^1.1.5",
     "robotjs": "^0.6.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "electron": "^8.2.5",
