@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+				height: 100vh;
+			}
+			input {
+				width: 100%;
+				height: 100%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" style="grid-column: 1; grid-row: 1" />
+		<input type="button" style="grid-column: 2; grid-row: 1" />
+		<input type="range" style="grid-column: 3; grid-row: 1" />
+		<input type="number" style="grid-column: 4; grid-row: 1" value="0" />
+	</body>
+</html>
