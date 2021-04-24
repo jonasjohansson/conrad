@@ -1,0 +1,76 @@
+:root {
+	--grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	--grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	--color: orange;
+	--color2: #2f2f2f;
+	--color3: #3f3f3f;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #2a2a2a;
+	color: white;
+	padding: 1rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+section {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: var(--grid-columns);
+	grid-template-rows: var(--grid-rows);
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+div {
+	/* grid-row: var(--x); */
+	/* grid-column: var(--y); */
+	grid-column-start: var(--x);
+	grid-column-end: calc(var(--x) * var(--w));
+	grid-row-start: var(--y);
+	grid-row-end: calc(var(--y) * var(--h));
+	text-align: center;
+	border: 1px solid var(--color);
+	box-sizing: border-box;
+	padding: 0.5rem;
+	background-color: transparent;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+}
+
+div > * {
+	width: 100%;
+	height: 100%;
+	background-color: #3f3f3f;
+}
+
+button {
+	width: 100%;
+	height: 100%;
+}
+
+div {
+}
+
+.vertical {
+}
+
+input[type='range'] {
+	overflow: hidden;
+	-webkit-appearance: none;
+	background-color: var(--color);
+}
+
+input[type='range']::-webkit-slider-thumb {
+	width: 10px;
+	-webkit-appearance: none;
+	height: 10px;
+	cursor: ew-resize;
+	box-shadow: -80px 0 0 80px white;
+}
